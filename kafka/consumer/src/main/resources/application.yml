@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: consumer
+
+  cloud:
+    function:
+      definition: processUser;processUserStatus
+    stream:
+      function:
+        definition: processUser;processUserStatus
+      bindings:
+        processUser-in-0:
+          destination: my-new-topic
+          group: my-group
+        processUserStatus-in-0:
+          destination: my-topic
+          content-type: text/plain
+      poller:
+        fixed-delay: 1000
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+#      properties:
+#        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+#        spring.json.trusted.packages: "*"
+#        spring.json.value.default.type: com.consumer.model.User
+
+server:
+  port: 8081

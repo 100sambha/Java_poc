@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: producer
+
+  cloud:
+    function:
+      definition: sendUser; sendUserStatus
+    stream:
+      function:
+        definition: sendUser; sendUserStatus
+      bindings:
+        sendUser-out-0:
+          destination: my-new-topic
+          content-type: application/json
+        sendUserStatus-out-0:
+          destination: my-topic
+          content-type: text/plain
+      poller:
+        fixed-delay: 1000
+      kafka:
+        binder:
+          brokers: localhost:9092
