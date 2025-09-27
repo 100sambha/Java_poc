@@ -1,5 +1,0 @@
-24-09-2025 00:15:30 TRACE SLF4JwithLog4J:11 - trace log
-24-09-2025 00:15:30 DEBUG SLF4JwithLog4J:12 - debug log
-24-09-2025 00:15:30 INFO  SLF4JwithLog4J:13 - info log
-24-09-2025 00:15:30 WARN  SLF4JwithLog4J:14 - warn log
-24-09-2025 00:15:30 ERROR SLF4JwithLog4J:15 - error log

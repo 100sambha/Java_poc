@@ -1,6 +1,0 @@
-27-09-2025 19:50:10 TRACE CommonsLoggingApp:12 - trace log
-27-09-2025 19:50:10 DEBUG CommonsLoggingApp:13 - debug log
-27-09-2025 19:50:10 INFO  CommonsLoggingApp:14 - info log
-27-09-2025 19:50:10 WARN  CommonsLoggingApp:15 - warn log
-27-09-2025 19:50:10 ERROR CommonsLoggingApp:16 - error log
-27-09-2025 19:50:10 ERROR CommonsLoggingApp:17 - fatal log

@@ -1,6 +1,0 @@
-24-09-2025 00:14:49 FATAL Log4JApp:13 - fatal log
-24-09-2025 00:14:49 INFO  Log4JApp:14 - info log
-24-09-2025 00:14:49 WARN  Log4JApp:15 - warn log
-24-09-2025 00:14:49 DEBUG Log4JApp:16 - debug log
-24-09-2025 00:14:49 ERROR Log4JApp:17 - error log
-24-09-2025 00:14:49 TRACE Log4JApp:18 - trace log

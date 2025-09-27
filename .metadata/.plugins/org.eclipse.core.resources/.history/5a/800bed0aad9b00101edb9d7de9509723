@@ -1,9 +1,0 @@
-27-09-2025 19:49:44 INFO  TestApp:14 - Start Main
-27-09-2025 19:49:44 INFO  TestApp:11 - TESTING...
-27-09-2025 19:49:44 INFO  TestApp:12 - Jay
-27-09-2025 19:49:44 INFO  TestApp:13 - Naik
-27-09-2025 19:49:44 TRACE TestApp:14 - Tracing
-27-09-2025 19:49:44 DEBUG TestApp:15 - Debugging Start
-27-09-2025 19:49:44 ERROR TestApp:16 - Yes Error Coming
-27-09-2025 19:49:44 WARN  TestApp:17 - Last Warning
-27-09-2025 19:49:44 INFO  TestApp:16 - Start End
