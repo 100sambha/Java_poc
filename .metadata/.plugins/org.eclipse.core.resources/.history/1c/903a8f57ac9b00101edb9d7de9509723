@@ -1,0 +1,21 @@
+#handlers= java.util.logging.ConsoleHandler
+#.level= INFO
+#java.util.logging.ConsoleHandler.level = INFO
+#java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
+#com.logicbig.level = WARNING
+
+
+handlers = java.util.logging.ConsoleHandler, java.util.logging.FileHandler
+.level = INFO
+
+# Console handler
+java.util.logging.ConsoleHandler.level = INFO
+java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
+
+# File handler
+java.util.logging.FileHandler.level = INFO
+java.util.logging.FileHandler.pattern = %h/myApp.log
+java.util.logging.FileHandler.formatter = java.util.logging.SimpleFormatter
+
+# Package-specific logging
+com.logicbig.level = WARNING

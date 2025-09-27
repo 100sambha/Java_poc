@@ -1,0 +1,6 @@
+24-09-2025 00:11:37 TRACE CommonsLoggingLog4j:10 - trace log
+24-09-2025 00:11:37 DEBUG CommonsLoggingLog4j:11 - debug log
+24-09-2025 00:11:37 INFO  CommonsLoggingLog4j:12 - info log
+24-09-2025 00:11:37 WARN  CommonsLoggingLog4j:13 - warn log
+24-09-2025 00:11:37 ERROR CommonsLoggingLog4j:14 - error log
+24-09-2025 00:11:37 ERROR CommonsLoggingLog4j:15 - fatal log

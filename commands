@@ -1,0 +1,80 @@
+docker --version
+
+
+get image from dockerhub
+docker pull ubuntu
+
+
+create container only
+sudo docker create <image-name/image-id>
+
+
+all running/stopped containers
+sudo docker ps
+sudo docker ps -a
+
+
+list all images
+sudo docker images
+
+
+start container using conatiner id
+sudo docker start <container-id>
+
+
+stop container using container id
+sudo docker stop <container-id>
+
+
+pause container using container id
+sudo docker pause <container-id>
+
+
+to start again paused containers using container id
+sudo docker unpause <container-id>
+
+
+run hello world image, if image not found pull and runs it automatically
+sudo docker run hello-world
+
+
+remove container using container-id
+sudo docker rm <container-id>
+
+
+remove image using image-id
+sudo docker rmi <image-id>
+
+
+search docker image on dockerhub
+sudo docker search mysql
+
+
+pull the java JDK 21
+sudo docker pull openjdk:21-jdk
+
+
+list container contain folders
+sudo docker exec <container-name> ls
+sudo docker exec <container-name> ls /tmp
+
+
+copy local file to image container folder location
+sudo docker cp target/rest-demo.jar <container-name>:/tmp
+
+
+create docker image for container
+sudo docker commit -change='CMD ["java","-jar","/tmp/rest-demo.jar]' <container-name> 100sambha/rest-demo:v1
+----------->>>>  sudo docker commit --change='CMD ["java","-jar","/tmp/rest-demo.jar"]' 6ac1e59d3bce 100sambha/rest-demo:v1
+
+run newly created docker image
+sudo docker run -p 8080:8080 100sambha/rest-demo:v1                     -d detached mode ->means run container in background
+
+
+build dockerfile using command
+sudo docker build -t 100sambha/rest-demo:v2 .
+
+sudo docker-compose up --build
+sudo docker-compose down
+sudo docker network ls
+sudo docker logs <container-id/name>

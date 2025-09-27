@@ -1,0 +1,6 @@
+Sept 27, 2025 7:45:32 PM org.loggers.JavaUtilLoggingApp main
+INFO: an info msg
+Sept 27, 2025 7:45:32 PM org.loggers.JavaUtilLoggingApp main
+WARNING: a warning msg
+Sept 27, 2025 7:45:32 PM org.loggers.JavaUtilLoggingApp main
+SEVERE: a severe msg
