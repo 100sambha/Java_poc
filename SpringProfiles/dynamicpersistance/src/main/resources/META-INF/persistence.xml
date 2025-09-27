@@ -2,9 +2,7 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="aithentic">
 			<properties>
-			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:mysql://dev-db-mysql-aithenticapi.cttbxkl2tz03.us-east-2.rds.amazonaws.com:3306/sip_prashant" /> -->
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/test" />
-			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:mysql://dev-db-mysql-aithenticapi.cttbxkl2tz03.us-east-2.rds.amazonaws.com:3306/sip?reWriteBatchedInserts=true" /> -->
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="admin" />
 			<property name="spring.jpa.hibernate.ddl-auto" value="update" />
